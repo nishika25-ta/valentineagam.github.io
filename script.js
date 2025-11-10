@@ -111,11 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
             keywords: ["Flutter", "Android Studio", "WebAR", "Augmented Reality"],
             description: `
                 <h3>🗺️ UNIMAS AR Navigator App</h3>
-                <p>This project involved developing a comprehensive, **fully functional augmented reality (AR) navigation solution** specifically designed for exploring the UNIMAS campus.</p>
+                <p>This project involved developing a comprehensive, fully functional augmented reality (AR) navigation solution specifically designed for exploring the UNIMAS campus.</p>
                 <h4>The Goal</h4>
-                <p>To provide students, staff, and visitors with a **dynamic and intuitive way** to navigate the university grounds, moving beyond static maps to offer an immersive, real-time guidance experience.</p>
+                <p>To provide students, staff, and visitors with a dynamic and intuitive way to navigate the university grounds, moving beyond static maps to offer an immersive, real-time guidance experience.</p>
                 <h4>The Solution & Technology</h4>
-                <p>The app was built using the **Flutter SDK** within **Android Studio**, ensuring a high-performance, cross-platform mobile experience. The highlight of the project is its sophisticated integration with **WebAR** technology, which allows the application to render AR elements directly through the web, offering seamless and practical guidance across the campus environment.</p>
+                <p>The app was built using the Flutter SDK within **Android Studio, ensuring a high-performance, cross-platform mobile experience. The highlight of the project is its sophisticated integration with WebAR technology, which allows the application to render AR elements directly through the web, offering seamless and practical guidance across the campus environment.</p>
                 <h4>Key Features</h4>
                 <ul>
                     <li><strong>Platform:</strong> Flutter SDK (Android development).</li>
@@ -210,5 +210,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
 
 });
