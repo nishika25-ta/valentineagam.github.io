@@ -112,7 +112,7 @@ const modalData = {
                 <li><strong>UX/UI:</strong> Employing a friendly, minimal design palette and clear navigation structure (bottom tab bar for Expenses, Saving goals, Budget, Settings).</li>
             </ul>
         `,
-        images: ["images/contents/fma/finance_dashboard.png", "images/contents/fma/login.png", "images/contents/fma/dashboard.png", "images/contents/fma/invest.png","images/contents/fma/motivation.png"]
+        images: ["images/contents/fma/login.png", "images/contents/fma/dashboard.png", "images/contents/fma/invest.png","images/contents/fma/motivation.png"]
     }
     // === END OF NEW PROJECT DATA ===
 };
@@ -327,3 +327,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
