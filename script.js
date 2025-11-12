@@ -17,7 +17,7 @@ const modalData = {
                 <li><strong>Outcome:</strong> Established benchmark for high-accuracy detection in challenging plantation environments</li>
             </ul>
         `,
-        images: ["images/FullStack.jpg", "images/Poster.jpg", "images/Detection.jpg"]
+        images: ["images/contents/palms/vale_poster.jpg","images/contents/palms/FullStack.jpg", "images/contents/palms/Poster.jpg", "images/contents/palms/Detection.jpg"]
     },
     "modal-2": {
         title: "Ultra Dim - Super Dimmer APK",
@@ -36,7 +36,7 @@ const modalData = {
                 <li><strong>Impact:</strong> Enhanced driving safety through reduced eye strain</li>
             </ul>
         `,
-        images: ["images/super_dim.png"]
+        images: ["images/contents/dims/super_dim.png"]
     },
     "modal-3": {
         title: "Trombol Paradise Beach App",
@@ -52,7 +52,7 @@ const modalData = {
                 <li><strong>eCommerce:</strong> Integrated cart and profile system for booking services and purchasing products</li>
             </ul>
         `,
-        images: ["images/Trombol_Main_Page.jpg", "images/Trombol_signin.jpg"]
+        images: ["images/contents/trombol/Trombol_Main_Page.jpg", "images/contents/trombol/Trombol_signin.jpg"]
     },
     "modal-4": {
         title: "UNIMAS AR Navigator App",
@@ -72,8 +72,49 @@ const modalData = {
                 <li><strong>Application:</strong> Intuitive campus exploration and guidance</li>
             </ul>
         `,
-        images: ["images/UNIMAS_AR_mainpage.jpg", "images/Unimas_AR.jpg"]
+        images: ["images/contents/ar/UNIMAS_AR_mainpage.jpg", "images/contents/ar/Unimas_AR.jpg"]
+    },
+    "modal-5": {
+        title: "Global Connection System",
+        keywords: ["Mobile Development", "UI/UX Design", "Community Empowerment", "Local Tourism"],
+        description: `
+            <h3>🌐 Global Connection System</h3>
+            <p>This project is a mobile application designed to foster community empowerment and sustainable development by providing accessible community training and promoting local tourism and culture.</p>
+            <h4>The Challenge & Goal</h4>
+            <p>The objective was to create a centralized, user-friendly digital hub that connects global resources with local communities, specifically focusing on upskilling women and villagers, and driving economic growth through local tourism promotion.</p>
+            <h4>The Solution</h4>
+            <p>Developed a platform with three core areas: seamless account creation via Google/Apple, a structured Community Training section (featuring videos on web creation, marketing, and local crafts), and a Local Tourism marketplace (for booking homestays, river tours, and village visits).</p>
+            <h4>Key Focus Areas</h4>
+            <ul>
+                <li><strong>Design & UX:</strong> Creating an intuitive, dark-mode-first user interface for easy navigation and content consumption.</li>
+                <li><strong>Community Support:</strong> Curating and presenting training materials for entrepreneurship and skill development.</li>
+                <li><strong>Local Economy:</strong> Facilitating direct bookings for local tourism services (Places & Bookings).</li>
+            </ul>
+        `,
+        images: ["images/contents/global/gsc2.png", "images/contents/global/gsc1.png", "images/contents/global/gsc3.png"]
+    },
+    
+    // === NEW PROJECT DATA ADDED HERE ===
+    "modal-6": {
+        title: "Personal Finance Management App",
+        keywords: ["UI/UX Design", "Mobile App", "FinTech", "Data Visualization"],
+        description: `
+            <h3>💰 Personal Finance Management App</h3>
+            <p>This project is a mobile application focused on empowering users with tools for effective personal finance management, encompassing expense tracking, budgeting, savings, and financial education.</p>
+            <h4>The Challenge & Goal</h4>
+            <p>The objective was to create an engaging and accessible platform that simplifies the often complex task of personal finance. The goal was to help users visualize spending habits, stay within budget limits, and easily access resources for financial growth.</p>
+            <h4>The Solution</h4>
+            <p>Designed a user experience centered around a clear Dashboard featuring expense statistics (pie chart), budget limit tracking (bar chart), and progress on Saving Goals. The app also includes dedicated sections for Motivation Videos and an Investment App hub linking to popular regional financial services (e.g., myASNB, Touch 'n Go eWallet, Versa).</p>
+            <h4>Key Focus Areas</h4>
+            <ul>
+                <li><strong>Data Visualization:</strong> Using clear charts (pie and bar) to communicate complex financial data at a glance, with immediate feedback (e.g., "You've gone over budget!").</li>
+                <li><strong>Holistic Financial Health:</strong> Integrating budgeting and saving tools with educational content and links to external investment opportunities.</li>
+                <li><strong>UX/UI:</strong> Employing a friendly, minimal design palette and clear navigation structure (bottom tab bar for Expenses, Saving goals, Budget, Settings).</li>
+            </ul>
+        `,
+        images: ["images/contents/fma/finance_dashboard.png", "images/contents/fma/login.png", "images/contents/fma/dashboard.png", "images/contents/fma/invest.png","images/contents/fma/motivation.png"]
     }
+    // === END OF NEW PROJECT DATA ===
 };
 
 // --- FIXED: Modal Functions from original file ---
