@@ -603,11 +603,16 @@ footer h3 {
     margin-top: 2rem;
 }
 
+/* === THIS IS THE CHANGED RULE === */
 #modal-images img {
     width: 100%;
+    max-height: 75vh; /* Prevents image from being too tall */
+    object-fit: contain; /* Fits the whole image, no "zoom" */
     border-radius: 16px;
     border: 1px solid var(--border-color);
+    background: #000; /* Added for letterboxing */
 }
+/* === END OF CHANGE === */
 
 /* Contact Modal */
 .contact-grid {
