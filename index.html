@@ -6,9 +6,9 @@
     <title>Valentine Agam - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
                     <span class="cursor">&nbsp;</span>
                 </h2>
                 <p class="hero-description fade-in">
-                    Designing effecient and aesthetic digital experiences and developing software that solve real-world problems.
+                    Designing efficient and aesthetic digital experiences and developing software that solve real-world problems.
                 </p>
                 <div class="hero-cta fade-in">
                     <a href="#work" class="btn btn-primary">View My Work</a>
@@ -56,19 +56,19 @@
                 <h2 class="section-title fade-in">Valentine's Projects</h2>
                 <p class="section-subtitle fade-in">A showcase of my recent work in AI, software development, and design.</p>
 
-                <div class="project-grid">
+                <div class="project-grid" id="projects-container">
                     <div class="project-card fade-in" data-modal="modal-1">
                         <div class="project-image-container">
-                            <img src="images/icons/palms.png" alt="Machine Learning Project" class="project-image">
+                            <img src="images/icons/palms.png" alt="Machine Learning Project" class="project-image" loading="lazy">
                         </div>
                         <div class="project-info">
-                            <h3>AI Palm Tree Detection</h3>
+                            <h3>AI/ML Palm Tree Detection</h3>
                             <p>Deep learning system for automated agricultural monitoring.</p>
                         </div>
                     </div>
                     <div class="project-card fade-in" data-modal="modal-2">
                         <div class="project-image-container">
-                            <img src="images/icons/dimmer_icon.png" alt="Super Dimmer App" class="project-image contain">
+                            <img src="images/icons/dimmer_icon.png" alt="Super Dimmer App" class="project-image contain" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Ultra Dim</h3>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="project-card fade-in" data-modal="modal-3">
                         <div class="project-image-container">
-                            <img src="images/icons/trombol_logo.png" alt="Trombol Paradise Beach" class="project-image contain">
+                            <img src="images/icons/trombol_logo.png" alt="Trombol Paradise Beach" class="project-image contain" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Trombol Paradise Beach</h3>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="project-card fade-in" data-modal="modal-4">
                         <div class="project-image-container">
-                            <img src="images/icons/ar_app_icon.png" alt="UNIMAS AR Navigator" class="project-image contain">
+                            <img src="images/icons/ar_app_icon.png" alt="UNIMAS AR Navigator" class="project-image contain" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>UNIMAS AR Navigator</h3>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="project-card fade-in" data-modal="modal-5">
                         <div class="project-image-container">
-                            <img src="images/icons/gsc.png" alt="Global Connection System" class="project-image contain">
+                            <img src="images/icons/gsc.png" alt="Global Connection System" class="project-image contain" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Global Connection System</h3>
@@ -104,25 +104,24 @@
                     </div>
                     <div class="project-card fade-in" data-modal="modal-6">
                         <div class="project-image-container">
-                            <img src="images/icons/fma.png" alt="Personal Finance App" class="project-image contain">
+                            <img src="images/icons/fma.png" alt="Personal Finance App" class="project-image contain" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Personal Finance App</h3>
                             <p>Mobile app for expense tracking, budgeting, and savings.</p>
                         </div>
                     </div>
-                    </div>
+                </div>
             </section>
 
             <section id="ongoing-work" class="work-section">
                 <h2 class="section-title fade-in">Ongoing Development</h2>
                 <p class="section-subtitle fade-in">A peek into what I'm currently building. These projects are in active development.</p>
 
-                <div class="project-grid">
-                    
+                <div class="project-grid" id="ongoing-container">
                     <div class="project-card fade-in" data-modal="modal-7">
                         <div class="project-image-container">
-                            <img src="images/icons/bookabary.png" alt="Bookabary Project" class="project-image contain" style="background-color: #fff;">
+                            <img src="images/icons/bookabary.png" alt="Bookabary Project" class="project-image contain bg-white" loading="lazy">
                         </div>
                         <div class="project-info">
                             <span class="status-tag">In Progress</span>
@@ -133,7 +132,7 @@
 
                     <div class="project-card fade-in" data-modal="modal-ongoing-1">
                         <div class="project-image-container">
-                            <img src="images/icons/xai.png" alt="XAI-PE Analyzer" class="project-image contain" style="background-color: #fff;">
+                            <img src="images/icons/xai.png" alt="XAI-PE Analyzer" class="project-image contain bg-white" loading="lazy">
                         </div>
                         <div class="project-info">
                             <span class="status-tag">In Progress</span>
@@ -143,9 +142,10 @@
                     </div>                   
                 </div>
             </section>
+
             <section id="about" class="about-section">
                 <div class="about-image fade-in">
-                    <img src="images/logo/vale_pic.jpg" alt="Valentine Agam">
+                    <img src="images/logo/vale_pic.jpg" alt="Valentine Agam" loading="lazy">
                 </div>
                 <div class="about-content fade-in">
                     <h2 class="section-title">About Me</h2>
@@ -213,7 +213,5 @@
             </div>
         </div>
     </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>
