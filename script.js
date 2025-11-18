@@ -1,5 +1,6 @@
-// --- FIXED: Modal Data from original file ---
+// --- Modal Data (MERGED) ---
 const modalData = {
+    // === Your new data for modals 1-6 ===
     "modal-1": {
         title: "Automated Oil Palm Detection",
         keywords: ["Python", "AI", "Machine Learning", "YOLO", "Automation"],
@@ -93,8 +94,6 @@ const modalData = {
         `,
         images: ["images/contents/global/gsc2.png", "images/contents/global/gsc1.png", "images/contents/global/gsc3.png"]
     },
-    
-    // === NEW PROJECT DATA ADDED HERE ===
     "modal-6": {
         title: "Personal Finance Management App",
         keywords: ["UI/UX Design", "Mobile App", "FinTech", "Data Visualization"],
@@ -113,11 +112,109 @@ const modalData = {
             </ul>
         `,
         images: ["images/contents/fma/login.png", "images/contents/fma/dashboard.png", "images/contents/fma/invest.png","images/contents/fma/motivation.png"]
+    },
+    
+    // === "Ongoing" data from your original file ===
+    "modal-7": {
+        title: "Project: Bookabary",
+        keywords: [
+            "Flutter", 
+            "Supabase", 
+            "PostgreSQL", 
+            "Full-Stack", 
+            "Google Books API", 
+            "TMDB API", 
+            "UI/UX"
+        ],
+        description: `
+            <p>An in-progress, full-stack personal media library application. Bookabary is designed to be a single, beautiful app to scan, track, and organize your physical books and movies.</p>
+            <p><strong>Tech Stack:</strong> Flutter (Frontend), Supabase (Backend/Database/Auth), Google Books API, The Movie Database (TMDB) API.</p>
+            
+            <h3>Core User Features</h3>
+            <ul>
+                <li><strong>Barcode-Powered Data Entry:</strong> Instantly scan a book's ISBN or movie's UPC to add it.</li>
+                <li><strong>Automated Media Details:</strong> Fetches cover art, summaries, cast, ratings, and more from external APIs.</li>
+                <li><strong>Personalized Digital Shelves:</strong> Organize media into custom-status shelves (e.g., "Read," "Currently Reading," "Want to Watch").</li>
+                <li><strong>Personal Ratings & Notes:</strong> Add 1-5 star ratings and private notes to any item.</li>
+                <li><strong>Manual Search Fallback:</strong> Manually search and add items that don't have a barcode.</li>
+            </ul>
+
+            <h3>Full-Stack & API Features</h3>
+            <ul>
+                <li><strong>Secure User Authentication:</strong> Full email, password, and social logins handled by Supabase Auth.</li>
+                <li><strong>Third-Party API Integration:</strong> Fetches and parses complex JSON responses from Google Books & TMDB.</li>
+                <li><strong>Proprietary Cloud Database:</strong> User data (ratings, notes, collections) is saved to a custom-structured PostgreSQL database.</li>
+                <li><strong>Optimized Data Storage:</strong> Saves clean, parsed data to the app's own database for instant loads.</li>
+                <li><strong>Row-Level Security (RLS):</strong> Backend database rules ensure users can only access their own data.</li>
+            </ul>
+
+            <h3>"In-Progress" & Roadmap Features</h3>
+            <ul>
+                <li><strong>Currently Building:</strong> A statistics dashboard for fun insights (e.g., "You've read 12 books this year").</li>
+                <li><strong>Next Up:</strong> A dedicated "Wishlist" feature.</li>
+                <li><strong>Future Goal:</strong> A "Discovery" feed to suggest new media based on user ratings.</li>
+            </ul>
+        `,
+        images: [] // <-- Add your image paths here! e.g., 'images/bookabary_scan.png'
+    },
+    "modal-ongoing-1": {
+        title: "XAI-PE Analyzer: Explainable Malware Detection",
+        keywords: ["Python", "XGBoost", "SHAP", "Malware Analysis", "XAI"],
+        description: `
+            <p>An ongoing machine learning project building an Explainable AI (XAI) tool for static analysis of Windows Portable Executables (PE). Provides high-accuracy malware prediction with detailed, human-readable explanations.</p>
+            <p><strong>Tech Stack:</strong> Python, XGBoost/LightGBM (Model), pefile (Feature Extraction), SHAP (XAI), NVIDIA CUDA (GPU Acceleration).</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Explainable Prediction:</strong> Doesn't just classify, but provides the why: e.g., "Malware Detected due to 'Function Call X' and 'High Entropy Section Y'."</li>
+                <li><strong>Static Analysis:</strong> Safely extracts features from PE file headers (e.g., imports, section data) using pefile without execution.</li>
+                <li><strong>Large-Scale Training:</strong> Model trained on the EMBER dataset (1.1M files), utilizing GPU acceleration (tree_method='gpu_hist') for optimized performance.</li>
+            </ul>
+
+            <h3>Roadmap</h3>
+            <ul>
+                <li><strong>Current Focus:</strong> Developing a streamlined, interactive dashboard for SHAP-based feature explanation visualization.</li>
+                <li><strong>Next Up:</strong> Implementing an automated continuous training pipeline to refresh the model with new data.</li>
+            </ul>
+        `,
+        images: []
+    },
+    "modal-ongoing-2": {
+        title: "Campus Safety AR Module",
+        keywords: ["Unity", "AR", "GPS", "Safety", "UNIMAS"],
+        description: `
+            <p><strong>This project is currently in development.</strong></p>
+            <p>This is a planned add-on for the UNIMAS AR Navigator application. The module will focus on enhancing campus safety by providing real-time, AR-guided emergency routes.</p>
+            
+            <h3>Planned Features</h3>
+            <ul>
+                <li>Overlay AR exit signs and pathways during emergency drills or alerts.</li>
+                <li>Integrate with campus security systems to highlight "safe zones."</li>
+                <li>Provide the quickest AR route to the nearest assembly point.</li>
+            </ul>
+        `,
+        images: []
+    },
+    "modal-ongoing-3": {
+        title: "Plantation Health Dashboard",
+        keywords: ["React", "Data Visualization", "Firebase", "Web App"],
+        description: `
+            <p><strong>This project is currently in development.</strong></p>
+            <p>A web-based dashboard designed to visualize the data collected from the "AI Palm Tree Detection" project. This will provide plantation managers with an easy-to-understand visual interface to monitor crop health.</p>
+            
+            <h3>Planned Features</h3>
+            <ul>
+                <li>An interactive map showing the health status of individual trees.</li>
+                <li>Charts and graphs for tracking health trends over time.</li>
+                <li>Automated reports and alerts for areas requiring attention.</li>
+                <li>Secure login for managers and administrators.</li>
+            </ul>
+        `,
+        images: []
     }
-    // === END OF NEW PROJECT DATA ===
 };
 
-// --- FIXED: Modal Functions from original file ---
+// --- Modal Functions (Unchanged) ---
 const projectModal = document.getElementById('project-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalKeywords = document.getElementById('modal-keywords');
@@ -157,19 +254,116 @@ function closeModal(modal) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // --- 1. Preloader ---
+    // --- FIX 1: PREVENT ANCHOR JUMP (Unchanged) ---
+    window.scrollTo(0, 0);
+    
+    // --- NEW PRELOADER & SCROLL-LOCK (Your splash screen) ---
+    // Prevent scrolling while the preloader is visible
+    document.body.style.overflow = 'hidden';
+
+    // Helper function for delays
+    const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+    // The new asynchronous preloader animation
+    async function startHackerAnimation() {
+        const preloader = document.getElementById('preloader');
+        const loaderText = document.getElementById('hacker-loader-text');
+        const nameEl = document.getElementById('hacker-name');
+        const accessEl = document.getElementById('access-granted');
+        
+        if (!loaderText || !nameEl || !accessEl) {
+             console.error('Preloader elements not found. Skipping animation.');
+             // Failsafe: just load the site
+             document.body.classList.add('loaded');
+             preloader.addEventListener('transitionend', () => {
+                preloader.style.display = 'none';
+                document.body.style.overflow = '';
+             });
+             return;
+        }
+
+        const messages = [
+            "Initializing kernel...",
+            "Establishing secure link...",
+            "Scanning for Nasi Lemak...",
+            "Bypassing firewalls...",
+            "Patting the cats...",
+            "Killing the bots...",
+            "Accessing portfolio..."
+        ];
+
+        // Phase 1: Type out loading messages
+        for (const msg of messages) {
+            loaderText.textContent = `> ${msg}`;
+            await wait(300); // Time each message is displayed
+        }
+        
+        await wait(400);
+        loaderText.textContent = "> Loading complete.";
+        await wait(300);
+
+        // Phase 2: Decode Name
+        nameEl.classList.add('visible');
+        const finalName = nameEl.getAttribute('data-value');
+        // All caps and symbols for the "hacker" effect
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789*&%$#@!";
+        let iterations = 0;
+        
+        const interval = setInterval(() => {
+            nameEl.textContent = finalName.split("")
+                .map((letter, index) => {
+                    // If we've already resolved this letter, keep it
+                    if(index < iterations) {
+                        return finalName[index];
+                    }
+                    // Otherwise, pick a random char
+                    return chars[Math.floor(Math.random() * chars.length)];
+                })
+                .join("");
+            
+            // If we've resolved the whole name, stop
+            if(iterations >= finalName.length) {
+                clearInterval(interval);
+            }
+            
+            // Controls how many letters are "decoded" per frame
+            iterations += 1 / 1;
+        }, 40); // Animation refresh rate
+
+        // Wait for the decode animation to finish
+        await wait(finalName.length * 120 + 500);
+
+        // Phase 3: Show Access Granted
+        accessEl.classList.add('visible');
+        
+        // ---
+        // *** THIS IS THE CHANGE FOR SMOOTHNESS ***
+        // Was 1000, now it's much shorter
+        await wait(10); 
+        // ---
+        
+        // Phase 4: Trigger Fade-Out
+        document.body.classList.add('loaded');
+    }
+    
+    // --- Main Load Event (Updated) ---
     window.addEventListener('load', () => {
         const preloader = document.getElementById('preloader');
-        document.body.classList.add('loaded');
-        
+
+        // Set up the listener for when the fade-out is DONE
         preloader.addEventListener('transitionend', () => {
             preloader.style.display = 'none';
-        });
+            // Restore scrolling now that the preloader is gone
+            document.body.style.overflow = '';
+        }, { once: true }); // Ensure this only runs once
+
+        // Start the new hacker animation sequence
+        startHackerAnimation();
     });
 
-    // --- 2. Custom Cursor ---
+    // --- Custom Cursor Logic (Unchanged from your file) ---
     const cursorOrb = document.querySelector('.cursor-orb');
-    
+
     document.addEventListener('mousemove', (e) => {
         if (cursorOrb) {
             cursorOrb.style.left = e.clientX + 'px';
@@ -177,34 +371,46 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // --- 3. Header Scroll Behavior ---
+    // --- Cursor Interaction Logic (Unchanged from your file) ---
+    const interactiveElements = document.querySelectorAll(
+        'a, .project-card, .close-button, .btn'
+    );
+    
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            document.body.classList.add('cursor-hover');
+        });
+        el.addEventListener('mouseleave', () => {
+            document.body.classList.remove('cursor-hover');
+        });
+    });
+
+
+    // --- Header Scroll Logic (Unchanged) ---
     let lastScroll = 0;
     const header = document.querySelector('header');
-
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        if (header) {
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            if (currentScroll > lastScroll && currentScroll > 200) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
         }
-
-        if (currentScroll > lastScroll && currentScroll > 200) {
-            header.classList.add('hidden');
-        } else {
-            header.classList.remove('hidden');
-        }
-        
         lastScroll = currentScroll;
     });
 
-    // --- 4. Intersection Observer (Fade-in on Scroll) ---
+    // --- Fade-in Observer (Unchanged) ---
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -213,14 +419,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, observerOptions);
-
     document.querySelectorAll('.fade-in').forEach(el => {
         observer.observe(el);
     });
 
-    // --- 5. Hero Typing Animation ---
+    // --- Typing Text (Unchanged) ---
     const typingTextElement = document.querySelector(".typing-text");
-
     if (typingTextElement) {
         const words = typingTextElement.getAttribute('data-words').split(',');
         let wordIndex = 0;
@@ -229,7 +433,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function type() {
             const currentWord = words[wordIndex];
-            
             if (isDeleting) {
                 typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
                 charIndex--;
@@ -237,13 +440,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
                 charIndex++;
             }
-
             let typeSpeed = 150;
-
             if (isDeleting) {
-                typeSpeed /= 2; // Faster when deleting
+                typeSpeed /= 2;
             }
-
             if (!isDeleting && charIndex === currentWord.length) {
                 typeSpeed = 2000; 
                 isDeleting = true;
@@ -253,78 +453,90 @@ document.addEventListener("DOMContentLoaded", () => {
                 wordIndex = (wordIndex + 1) % words.length; 
                 typeSpeed = 500; 
             }
-
             setTimeout(type, typeSpeed);
         }
-
         type(); 
     }
 
-    // --- 6. FIXED: Smooth scroll for anchor links (from original) ---
-    // This logic correctly ignores the modal links
+    // --- Smooth Scroll (Unchanged) ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href !== '#' && href !== '#contact-link') { // Key check!
+            if (href && href.startsWith('#') && href.length > 1 && href !== '#contact-link') { 
                 e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const headerOffset = 100;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
+                try {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerOffset = 100;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                } catch (error) {
+                    console.error("Error in smooth scroll:", error);
                 }
             }
         });
     });
 
-    // --- 7. FIXED: Added Modal Event Listeners ---
-    
-    // Project modal listeners
+    // --- Modal Event Listeners (Unchanged) ---
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('click', () => {
             const modalId = card.getAttribute('data-modal');
             const data = modalData[modalId];
-            if (data) openProjectModal(data);
+            if (data) {
+                openProjectModal(data);
+            } else {
+                console.warn(`No modal data found for ID: ${modalId}`);
+            }
         });
     });
 
-    // Close buttons
     document.querySelectorAll('.close-button').forEach(btn => {
         btn.addEventListener('click', () => {
             closeModal(btn.closest('.modal'));
         });
     });
 
-    // Close on overlay click
     document.querySelectorAll('.modal').forEach(modal => {
         modal.addEventListener('click', (e) => {
             if (e.target === modal) closeModal(modal);
         });
     });
 
-    // Contact modal listeners
     const contactLink = document.getElementById('contact-link');
     const contactModal = document.getElementById('contact-modal');
-
-    contactLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        contactModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
+    if (contactLink && contactModal) {
+        contactLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            contactModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
     
-    // Escape key to close modals
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
+        if (e.key === "Escape") {
             document.querySelectorAll('.modal.active').forEach(modal => {
                 closeModal(modal);
             });
         }
     });
 
-});
+    // --- Hero Parallax (Unchanged) ---
+    const hero = document.querySelector('.hero-section');
+    if (hero) {
+        document.addEventListener('mousemove', (e) => {
+            const xMovement = (e.clientX - window.innerWidth / 2) / window.innerWidth * 20; 
+            const yMovement = (e.clientY - window.innerHeight / 2) / window.innerHeight * 20;
+            const pos1X = 20 - xMovement;
+            const pos1Y = 50 - yMovement;
+            const pos2X = 80 - xMovement;
+            const pos2Y = 80 - yMovement;
+            hero.style.backgroundPosition = `${pos1X}% ${pos1Y}%, ${pos2X}% ${pos2Y}%`;
+        });
+    }
 
+});
